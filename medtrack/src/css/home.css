@@ -1,0 +1,34 @@
+/* Home page styles */
+.home {
+    background-image: url('../assets/26807.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: calc(100vw - 250px); /* Adjust width to fill remaining space after sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-home {
+    background-image: linear-gradient(to right, #00008B, #47c9fd); /* Text gradient from dark blue to light */
+    -webkit-background-clip: text; /* Apply background to text */
+    -webkit-text-fill-color: transparent; /* Hide original text color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-text {
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+    .home{
+        padding-top: 10vh;
+        width: 100vw; 
+    }
+}

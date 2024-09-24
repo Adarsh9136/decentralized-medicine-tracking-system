@@ -1,0 +1,115 @@
+/* Medicine Details CSS */
+.medicine-details {
+    /* Add styles for the medicine details container */
+    /* Add your styles here */
+    color: black;
+    text-align: start;
+    padding: 5px;
+    min-height: 100vh;
+    width: calc(100vw - 265px); /* Adjust width to fill remaining space after sidebar */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+/* Medicine History CSS */
+.medicine-history {
+    margin-top: 20px;
+}
+
+.medicine{
+    display: flex;
+}
+.medicine-right{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.medicine-history h3 {
+    font-size: 18px;
+}
+
+/* Timeline Container CSS */
+.timeline-container {
+    position: relative; /* Position the container relative to its parent */
+    text-align: start;
+}
+
+/* Timeline Line CSS */
+.timeline-line {
+    position: absolute; /* Position the line absolutely within the container */
+    top: 10px;
+    left: 6px; /* Adjust left position to align with the timeline dots */
+    width: 2px; /* Width of the timeline line */
+    height: 100%; /* Full height of the container */
+    background-color: #ccc; /* Color of the timeline line */
+}
+
+/* Timeline Dot CSS */
+.timeline-dot {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: black; /* Color of the timeline dot */
+    border-radius: 50%;
+}
+
+/* Timeline Content CSS */
+.timeline-content {
+    margin-top: -20px;
+    margin-left: 25px; /* Add space to the left of the content for better readability */
+    padding-bottom: 30px; /* Add space at the bottom of each content for better separation */
+}
+
+/* Adjust timeline content styles based on your design */
+.timeline-content p {
+    margin: 0;
+    line-height: 1.5;
+    /* Add more styles as needed */
+}
+.timeline-content .location-text{
+    font-weight: 600;
+}
+.medicine-details ul{
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 0;
+    height: 45vh;
+}
+
+.medicine-show{
+    background: white;
+    width: 100vw;
+    height: 100vh-40px;
+    padding: 20px;
+}
+
+/* CSS for the button */
+.button-sold {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-sold.available {
+    background-color: green;
+}
+
+.button-sold.sold {
+    background-color: blue;
+}
+.red-bg {
+    background-color: red;
+}
+
+@media screen and (max-width:800px) {
+    .medicine{
+        flex-direction: row;
+    }
+    .medicine-details{
+        padding-top: 20vh;
+        width: 100vw;
+    }
+    
+}

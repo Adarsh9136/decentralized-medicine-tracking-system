@@ -1,0 +1,81 @@
+/* medicineform.css */
+
+/* Main container for the form */
+.medicine-page {
+    color: black;
+    /* height: 100vh; */
+    min-height: 100vh;
+    width: calc(100vw - 265px); /* Adjust width to fill remaining space after sidebar */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.form{
+    margin-left: 20%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+/* Container for each form field */
+.medicine-page div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for labels */
+.medicine-page label {
+    margin-right: 20px;
+    width: 200px; /* Set a fixed width for labels */
+    text-align: start;
+    font-weight: 600;
+}
+
+/* Style for input fields */
+.medicine-page input {
+    flex: 1; /* Take up remaining space */
+    background-color: white; /* Set input fields background color */
+    color: black; /* Set text color to white */
+    padding: 10px; /* Add padding for better appearance */
+    border: 2px solid black; /* Add black border */
+    border-radius: 5px; /* Add border radius */
+    min-width: 100px;
+    max-width: 800px;
+}
+
+
+/* Style for submit button */
+.medicine-page button {
+    margin-top: 20px;
+    padding: 10px 80px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.medicine-page button:hover {
+    background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 800px) {
+    .medicine-page{
+        margin-top: 20vh;
+        min-height: 100vh;
+        width: 100vw; /* Adjust width to fill remaining space after sidebar */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .medicine-page label ,.medicine-page input{
+        max-width: 40%;
+    }
+    .form{
+        width: 100%;
+        margin-left: 0;
+    }
+}

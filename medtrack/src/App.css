@@ -1,0 +1,12 @@
+/* app.css */
+#root {
+  max-width: 100%; /* Change max-width to 100% to fit the screen */
+  text-align: center;
+}
+
+body {
+  align-items: center;
+  color: black;
+  margin: 0; /* Remove default margin to avoid unwanted space */
+  padding: 0; /* Remove default padding to avoid unwanted space */
+}

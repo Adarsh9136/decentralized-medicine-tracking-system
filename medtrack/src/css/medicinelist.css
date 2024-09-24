@@ -1,0 +1,88 @@
+.medicine-list{
+    min-height: 100vh;
+    width: calc(100vw - 265px); /* Adjust width to fill remaining space after sidebar */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-field {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Rounded border */
+    outline: none; /* Remove default focus outline */
+    font-size: 16px;
+    background-size: 20px; /* Set size of search icon */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position search icon */
+    padding-left: 40px; /* Adjust padding to accommodate search icon */
+    background: white;
+    color: black;
+}
+.search-area{
+    height: 15vh;
+}
+/* Style placeholder text */
+.search-field::placeholder {
+    color: #aaa;
+}
+.medicine-card {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space evenly between items */
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+.scan-button{
+    margin: 10px 5px;
+    border: 1px solid black; 
+}
+.medicine-card span {
+    flex-grow: 1; /* Allow the text to grow and take up available space */
+}
+
+.status-icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px; /* Add margin between text and icon */
+
+}
+.safe {
+    background-color: rgb(60, 237, 60);
+}
+
+.danger {
+    background-color: red;
+    color: white;
+}
+.medicine-list ul {
+    max-height: 75vh; /* Set a maximum height for the list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 30px 0;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .none {
+        display: none;
+    }
+    .medicine-list{
+        margin-top: 20vh;
+        min-height: 100vh;
+        width: 100vw; /* Adjust width to fill remaining space after sidebar */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
